@@ -1,0 +1,46 @@
+name: Device report
+description: Tell us whether BatteryHub reads your device correctly
+title: "[Device] "
+labels: ["device-report"]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Device model
+      placeholder: Logitech G305
+    validations:
+      required: true
+  - type: dropdown
+    id: connection
+    attributes:
+      label: Connection
+      options:
+        - Bluetooth
+        - USB receiver
+        - Cable
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: Result
+      options:
+        - Correct level
+        - Wrong level
+        - Listed, but no level
+        - Not listed
+    validations:
+      required: true
+  - type: input
+    id: real-level
+    attributes:
+      label: Level shown by the device or its official app
+      placeholder: 70%
+  - type: textarea
+    id: report
+    attributes:
+      label: Test report
+      description: Right-click the tray icon, choose "Copy test report" and paste it here. Please read it first and remove anything personal.
+      render: text
+    validations:
+      required: true
