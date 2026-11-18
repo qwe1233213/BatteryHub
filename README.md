@@ -6,7 +6,7 @@ A tiny Windows tray app that shows the battery level of your wireless devices in
 - One click for the full list of devices
 - Low battery warning at 20%
 - Optional start with Windows
-- About 25 KB, no installer, no account
+- About 40 KB, no installer, no account
 - Makes no network connections
 
 ## Download
